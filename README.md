@@ -1,24 +1,55 @@
-# README
+# Conversor de Moedas
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esse projeto foi desenvolvido em Ruby on Rails através do curso do BootCamp - [OneBitCode](http://onebitcode.com). Este [app](http://conversaomoeda.herokuapp.com/) converte o valor de uma moeda para outra moeda. Ex: 10 reais custa X euros. Para a conversão de moedas foi utilizada a [Fixer API](http://fixer.io/).
 
-Things you may want to cover:
 
-* Ruby version
+## Tecnologias Utilizadas
 
-* System dependencies
+- Ruby 2.3
+- Rails 5.0.1
+- Postgres 9.5
+- [Fixer API](http://fixer.io/)
 
-* Configuration
+## Iniciando
 
-* Database creation
+#### Acesse o site
 
-* Database initialization
+Go to [http://conversaomoeda.herokuapp.com/](http://conversaomoeda.herokuapp.com/)
 
-* How to run the test suite
+#### Locamente
 
-* Services (job queues, cache servers, search engines, etc.)
+###### Usando Docker
 
-* Deployment instructions
+```
+git clone git@github.com:lailson/Conversao_moedas_app.git
 
-* ...
+docker-compose build
+
+docker-compose up
+```
+
+###### Localhost
+
+```
+git clone git@github.com:lailson/Conversao_moedas_app.git
+
+bundle install
+
+rails s
+```
+
+### Testing
+
+#### Using Docker
+
+```
+docker-compose run --rm website rspec
+```
+
+#### Localhost
+
+
+```
+rspec
+
+```

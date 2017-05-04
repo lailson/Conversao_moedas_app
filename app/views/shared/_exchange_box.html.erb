@@ -18,6 +18,9 @@
           <div class="form-group">
             <p class="title">Moeda Pretendida</p>
             <%= select_tag "currency_destination", options_for_select(currency_select, "EUR"), class: "form-control", id: "currency_destination"%>
+            <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
           </div>
           <div class="form-group">
             <input type="text" id="result" name="result" class="form-control" placeholder="Resultado" readonly>
@@ -30,3 +33,6 @@
     </div>
   </div>
 </div>
+
+
+<script src="assets/javascripts/exchange_box.js" charset="utf-8"></script>
