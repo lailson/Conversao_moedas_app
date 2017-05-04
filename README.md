@@ -2,9 +2,9 @@
 
 Esse projeto foi desenvolvido em Ruby on Rails através do curso do BootCamp - [OneBitCode](http://onebitcode.com). Este [app](http://conversaomoeda.herokuapp.com/) converte o valor de uma moeda para outra moeda. Ex: 10 reais custa X euros. Para a conversão de moedas foi utilizada a [Fixer API](http://fixer.io/).
 
-![alt text][logo]
+![App Conversão de moeda][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://raw.githubusercontent.com/lailson/Conversao_moedas_app/master/public/site.png "APP"
 
 
 ## Tecnologias Utilizadas
