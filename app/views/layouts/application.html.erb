@@ -7,9 +7,53 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
     <%= yield %>
+
+    <script>
+    function change_quantity() {
+      return $('form').submit(function() {
+        if ($('form').attr('action') === '/exchange') {
+          $.ajax('/exchange', {
+            type: 'POST',
+            dataType: 'json',
+            data: {
+              currency: $("#currency").val(),
+              currency_destination: $("#currency_destination").val(),
+              quantity: $("#quantity").val()
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+              return alert(textStatus);
+            },
+            success: function(data, text, jqXHR) {
+              return $('#result').val(data.value);
+            }
+          });
+          return false;
+        }
+      });
+    };
+
+      function change_currency(){
+        var currency = document.querySelector("#currency").value;
+        var currency_destination = document.querySelector("#currency_destination").value;
+        temp = currency_destination;
+        document.querySelector("#currency_destination").value = currency;
+        document.querySelector("#currency").value = temp;
+
+      }
+
+    button = document.querySelector("#change_currency");
+    button.addEventListener("click", change_currency);
+
+    var quantidade = document.querySelector("#quantity");
+    console.log(quantidade);
+    
+
+    </script>
+
   </body>
 </html>

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function change_quantity() {
   return $('form').submit(function() {
     if ($('form').attr('action') === '/exchange') {
       $.ajax('/exchange', {
