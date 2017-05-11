@@ -17,7 +17,7 @@ Esse projeto foi desenvolvido em Ruby on Rails através do curso do BootCamp - [
 
 ## Iniciando
 
-#### Acesse o site
+#### Acesse o site - Demo
 
 [http://conversaomoeda.herokuapp.com/](http://conversaomoeda.herokuapp.com/)
 
@@ -45,7 +45,7 @@ rails s
 
 ### Testando
 
-#### Using Docker
+#### Usando Docker
 
 ```
 docker-compose run --rm website rspec
@@ -59,11 +59,13 @@ rspec
 
 ```
 
-##TODO
-Criar botão para alternar entre moeda de destino e origem.
-Remover botão CONVERTER e apresentar resultado automaticamente
+## TODO
+˜˜Criar botão para alternar entre moeda de destino e origem.˜˜
+˜˜Remover botão CONVERTER e apresentar resultado automaticamente˜˜
 Incluir BitCoin
 Incluir alteração de valor da moeda.
+Inlcuir gráfico de alteração de moedas
+Testes
 
-##Wireframe
+## Wireframe
 [Versão1](https://wireframepro.mockflow.com/view/D1811d0a7d9175679f76ac7f2841467ba)
