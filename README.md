@@ -61,11 +61,17 @@ rspec
 
 ## TODO
 ~~Criar botão para alternar entre moeda de destino e origem.~~
+
 ~~Remover botão CONVERTER e apresentar resultado automaticamente~~
+
 Incluir BitCoin
+
 Incluir alteração de valor da moeda.
+
 Inlcuir gráfico de alteração de moedas.
+
 Resolver problema de conversão para mesma moeda.
+
 Testes.
 
 ## Wireframe
