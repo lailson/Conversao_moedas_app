@@ -64,8 +64,17 @@ rspec
 ˜˜Remover botão CONVERTER e apresentar resultado automaticamente˜˜
 Incluir BitCoin
 Incluir alteração de valor da moeda.
-Inlcuir gráfico de alteração de moedas
-Testes
+Inlcuir gráfico de alteração de moedas.
+Resolver problema de conversão para mesma moeda.
+Testes.
 
 ## Wireframe
 [Versão1](https://wireframepro.mockflow.com/view/D1811d0a7d9175679f76ac7f2841467ba)
+
+
+## Contribuindo
+1. Faça o Fork do projeto.
+2. Crie uma nova branch (`git checkout -b minha-nova-branch`).
+3. Commit suas alterações (`git commit -am 'Adicionar nova  feature'`).
+4. Push a nova branch (`git push origin minha-nova-feature`).
+5. Crie um novo Pull Request.
