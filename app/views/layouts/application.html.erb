@@ -12,11 +12,26 @@
 
   <body>
     <%= yield %>
-
     <script>
-    function change_quantity() {
-      return $('form').submit(function() {
-        if ($('form').attr('action') === '/exchange') {
+
+
+    function change_currency(){
+      var currency = document.querySelector("#currency").value;
+      var currency_destination = document.querySelector("#currency_destination").value;
+      var temp = currency_destination;
+      document.querySelector("#currency_destination").value = currency;
+      document.querySelector("#currency").value = temp;
+
+      convert_currency();
+
+
+    }
+
+
+
+    $("#quantity").on("input", convert_currency);
+
+    function convert_currency(){
           $.ajax('/exchange', {
             type: 'POST',
             dataType: 'json',
@@ -29,31 +44,17 @@
               return alert(textStatus);
             },
             success: function(data, text, jqXHR) {
-              return $('#result').val(data.value);
+              return document.getElementById('result').value = data.value;
             }
           });
           return false;
-        }
-      });
-    };
+    }
 
-      function change_currency(){
-        var currency = document.querySelector("#currency").value;
-        var currency_destination = document.querySelector("#currency_destination").value;
-        temp = currency_destination;
-        document.querySelector("#currency_destination").value = currency;
-        document.querySelector("#currency").value = temp;
-
-      }
 
     button = document.querySelector("#change_currency");
     button.addEventListener("click", change_currency);
 
-    var quantidade = document.querySelector("#quantity");
-    console.log(quantidade);
-    
 
     </script>
-
   </body>
 </html>
