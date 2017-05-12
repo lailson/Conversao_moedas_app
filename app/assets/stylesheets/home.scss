@@ -24,5 +24,12 @@ body {
   .logo-box{
     margin: 0 auto;
     padding-bottom: 10px;
+
   }
+
+
+.logo-box-rotate{
+  transition: 2s ease;
+  transform: rotate(700grad);
+}
 }

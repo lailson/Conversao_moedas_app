@@ -31,7 +31,15 @@
 
     $("#quantity").on("input", convert_currency);
 
+
     function convert_currency(){
+      var logo = document.querySelector(".logo-box");
+
+      logo.classList.add("logo-box-rotate");
+      setTimeout(function(){
+          logo.classList.remove("logo-box-rotate");
+      }, 2000);
+
           $.ajax('/exchange', {
             type: 'POST',
             dataType: 'json',
@@ -48,6 +56,7 @@
             }
           });
           return false;
+
     }
 
 
